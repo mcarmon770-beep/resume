@@ -4,6 +4,7 @@ body {
     background: #0b0f1a;
     color: #ffffff;
     scroll-behavior: smooth;
+    line-height: 1.6;
 }
 
 /* תפריט */
@@ -294,84 +295,40 @@ h2 {
 
 @media (max-width: 768px) {
 
-    /* מונע “הקטנה של כל האתר” */
     body {
-        overflow-x: hidden;
+        font-size: 16px; /* בסיס קריא */
+        line-height: 1.6;
     }
 
-    /* ניווט נהיה נוח למובייל */
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        padding: 12px 16px;
+    section {
+        padding: 60px 18px;
     }
 
-    .links {
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-
-    .navbar a {
-        font-size: 13px;
-    }
-
-    /* כותרת ראשית */
-    .hero {
-        padding: 120px 16px 70px;
-    }
-
-    .hero h1 {
-        font-size: 32px;
-        line-height: 1.2;
-    }
-
-    .hero p {
+    p {
         font-size: 15px;
     }
 
-    /* סעיפים */
-    section {
-        padding: 60px 16px;
+    .hero h1 {
+        font-size: 34px;
     }
 
-    h2 {
-        font-size: 22px;
-    }
-
-    /* כרטיסים */
-    .card {
-        padding: 14px;
-        margin: 12px 0;
-    }
-
-    /* טיימליין – הכי חשוב */
-    .timeline {
-        padding-right: 10px;
-    }
-
-    .timeline-item {
-        padding-right: 30px;
-    }
-
-    .content h3 {
+    .hero p {
         font-size: 16px;
     }
 
-    /* כישורים */
-    .skills-grid {
-        gap: 8px;
+    h2 {
+        font-size: 24px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .meta {
+        font-size: 12px;
     }
 
     .skills-grid span {
-        font-size: 12px;
-        padding: 6px 10px;
-    }
-
-    /* כפתור וואטסאפ לא מפריע */
-    .whatsapp {
-        width: 48px;
-        height: 48px;
-        font-size: 20px;
+        font-size: 13px;
     }
 }
