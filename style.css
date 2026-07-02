@@ -1,3 +1,8 @@
+html {
+    width: 100%;
+    font-size: 18px;
+}
+
 body {
     margin: 0;
     font-family: 'Heebo', sans-serif;
@@ -5,6 +10,9 @@ body {
     color: #ffffff;
     scroll-behavior: smooth;
     line-height: 1.6;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* תפריט */
@@ -296,39 +304,23 @@ h2 {
 @media (max-width: 768px) {
 
     body {
-        font-size: 16px; /* בסיס קריא */
-        line-height: 1.6;
-    }
-
-    section {
-        padding: 60px 18px;
+        font-size: 18px !important;
     }
 
     p {
-        font-size: 15px;
+        font-size: 17px !important;
+        line-height: 1.7;
     }
 
     .hero h1 {
-        font-size: 34px;
-    }
-
-    .hero p {
-        font-size: 16px;
+        font-size: 38px !important;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 28px !important;
     }
 
     .content p {
-        font-size: 14px;
-    }
-
-    .meta {
-        font-size: 12px;
-    }
-
-    .skills-grid span {
-        font-size: 13px;
+        font-size: 16px !important;
     }
 }
