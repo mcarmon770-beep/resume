@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    background: #0b0f1a;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+/* תפריט */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background: rgba(10, 14, 25, 0.85);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 22px;
+    box-sizing: border-box;
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    z-index: 1000;
+}
+
+.navbar a {
+    position: relative;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    width: 0%;
+    height: 2px;
+    background: #7c3aed;
+    transition: 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar a.active {
+    color: #ffffff;
+}
+
+.navbar a.active::after {
+    width: 100%;
+}
+
+.logo {
+    font-weight: 700;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: #cbd5ff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    color: #7c3aed;
+}
+
+/* פתיחה */
+.hero {
+    padding: 160px 20px 90px;
+    text-align: center;
+    background: radial-gradient(circle at top, #1b1f3a, #0b0f1a);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #b7c0ff;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 22px;
+
+    background: linear-gradient(135deg, #7c3aed, #4f46e5);
+    color: white;
+
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* סעיפים */
+section {
+    padding: 90px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* כרטיסים */
+.card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.06);
+    transform: none;
+}
+
+.card:hover {
+    transform: translateY(-3px); /* פחות דרמטי */
+}
+
+.timeline {
+    position: relative;
+    margin-top: 30px;
+    padding-right: 20px;
+}
+
+/* הקו האנכי */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 2px;
+    height: 100%;
+    background: rgba(124,58,237,0.3);
+}
+
+/* כל פריט */
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-right: 40px;
+}
+
+/* הנקודה */
+.dot {
+    position: absolute;
+    right: 2px;
+    top: 5px;
+
+    width: 16px;
+    height: 16px;
+
+    background: #7c3aed;
+    border-radius: 50%;
+
+    box-shadow: 0 0 10px rgba(124,58,237,0.5);
+}
+
+/* תוכן */
+.content h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.content p {
+    margin-top: 8px;
+    color: #cbd5ff;
+    line-height: 1.6;
+}
+
+.meta {
+    color: #a78bfa; /* פחות חזק */
+}
+
+.skills-grid span {
+    background: rgba(167,139,250,0.10);
+    border: 1px solid rgba(167,139,250,0.2);
+}
+
+/* כישורים */
+.skill {
+    margin: 10px 0;
+}
+
+.bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background: linear-gradient(135deg, #7c3aed, #4f46e5);
+    width: 0;
+    transition: 1.5s;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+
+    width: 55px;
+    height: 55px;
+
+    background: #25D366;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+
+    text-decoration: none;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all 0.8s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-grid span {
+    background: rgba(124,58,237,0.15);
+    border: 1px solid rgba(124,58,237,0.3);
+    color: #c7b6ff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+#contact a {
+    color: #c7b6ff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#contact a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
