@@ -307,6 +307,26 @@ h2 {
         font-size: 18px !important;
     }
 
+    .navbar {
+        flex-direction: row; /* חשוב: לא column */
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .links {
+        order: 2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+
     p {
         font-size: 17px !important;
         line-height: 1.7;
